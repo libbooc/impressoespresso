@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/r/ju-1.11.4/jqc-1.11.3,dt-1.10.8/datatables.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Impresso Espresso</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow-lg ">
+        <div class="container-fluid">
+            <div class="hero-animation">
+                <a class="navbar-brand text-dark ms-sm-0 ms-md-5 px-2" href="#">Impresso Espresso</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex w-100 pe-sm-0 pe-md-5 flex-lg-row-reverse">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#branches">Branches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-5 py-5">
+
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 text-light">Impresso
+                        Espresso</h1>
+                    <div class="hero-fade">
+                        <p class="lead text-light">It’s amazing how the world begins to change through the eyes of a cup
+                            of
+                            coffee. May your coffee kick in before reality does. Impresso Espresso is now offering new
+                            variety
+                            of coffee nationwide!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="min-h mt-5" id="menu">
+        <div class="container">
+            <p class="h1 text-center py-5">MENU</p>
+
+            <div id="tabs">
+                <ul class="d-flex justify-content-center">
+                    <li><a class="p-3 me-4 border-2 rounded-pill tabs" href="#best-seller">Best Sellers</a></li>
+                    <li><a class="p-3 me-4 border-2 rounded-pill tabs" href="#new-items">New Items</a></li>
+                    <li><a class="p-3 me-4 border-2 rounded-pill tabs" href="#gift-items">Gift Items</a></li>
+                </ul>
+                <div class="tab-contents p-5" id="best-seller">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/green-tea.png" class="card-img-top-main openModal" role="button"
+                                    alt="green-tea" modal="greenTea">
+                                <div class="card-body">
+                                    <h5 class="card-title">Green Tea <p class="text-danger">P 150.00 / bag</p>
+                                    </h5>
+                                    <span class="badge bg-success">Best Seller</span>
+                                </div>
+                            </div>
+                            <div id="greenTea" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/green-tea.png" class="card-img-top" alt="green-tea"
+                                                        id="openModal" modal="greenTea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">Green Tea</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="150" class="text-danger">P 150.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-2">Green tea is a type of tea that is made
+                                                        from
+                                                        Camellia
+                                                        sinensis
+                                                        leaves and buds that have not undergone the same withering and
+                                                        oxidation
+                                                        process
+                                                        used to make oolong teas and black teas. Green tea originated in
+                                                        China,
+                                                        and
+                                                        since then its production and manufacture has spread to other
+                                                        countries
+                                                        in
+                                                        East
+                                                        Asia.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/hibiscus-tea.png" class="card-img-top-main openModal" role="button"
+                                    alt="hibiscus-tea" modal="hibiscusTea">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hibiscus Tea <p class="text-danger">P 160.00 / bag</p>
+                                    </h5>
+                                    <span class="badge bg-success">Best Seller</span>
+                                </div>
+                            </div>
+                            <div id="hibiscusTea" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/hibiscus-tea.png" class="h-100 w-90"
+                                                        alt="hibiscus-tea" id="openModal" modal="hibiscusTea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">Hibiscus Tea</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="160" class="text-danger">P 160.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-2">Hibiscus tea is an herbal tea made as an
+                                                        infusion from
+                                                        crimson
+                                                        or deep magenta-colored calyces of the roselle flower. It is
+                                                        consumed both hot
+                                                        and cold. It has a tart, cranberry-like flavor. Out of all
+                                                        herbal teas, hibiscus
+                                                        actually has the highest amount of antioxidants. Antioxidants
+                                                        help repair
+                                                        damaged cells.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/black-tea.png" class="card-img-top-main openModal" role="button"
+                                    alt="black-tea" modal="blackTea">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Tea <p class="text-danger">P 120.00 / bag</p>
+                                    </h5>
+                                    <span class="badge bg-success">Best Seller</span>
+                                </div>
+                            </div>
+                            <div id="blackTea" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/black-tea.png" class="h-100 w-90" alt="black-tea"
+                                                        id="openModal" modal="blackTea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">Black Tea</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="120">P 120.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-5">Black tea is made from the leaves of a
+                                                        bush called
+                                                        Camellia sinensis. It has caffeine as well as other stimulants
+                                                        and antioxidants.
+                                                        Lots of people in the U.S. drink it either hot or cold. It
+                                                        should always be
+                                                        steeped in hot water before it is cooled.
+
+                                                        A process called oxidation turns the leaves from green to a dark
+                                                        brownish-black
+                                                        color.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents p-5" id="new-items">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/white-tea.png" class="card-img-top-main openModal" role="button"
+                                    alt="white-tea" modal="whiteTea">
+                                <div class="card-body">
+                                    <h5 class="card-title">White Tea <p class="text-danger">P 135.00 / bag</p>
+                                    </h5>
+                                    <span class="badge bg-warning">New</span>
+                                </div>
+                            </div>
+                            <div id="whiteTea" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/white-tea.png" class="card-img-top-main"
+                                                        alt="white-tea" id="openModal" modal="whiteTea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">White Tea</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="120">P 135.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-5">White tea is made from the Camellia
+                                                        sinensis plant.
+                                                        White tea benefits include preventing tooth decay, promoting
+                                                        healthy skin and
+                                                        hair and increased energy and alertness. Drinking a cup a day
+                                                        can help prevent
+                                                        things like the common cold and eliminate free radicals that can
+                                                        cause an array
+                                                        of ailments from acne to cancer.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/oolong-tea.png" class="card-img-top-main openModal" role="button"
+                                    alt="oolong-tea" modal="oolongTea">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oolong Tea <p class="text-danger">P 155.00 / bag</p>
+                                    </h5>
+                                    <span class="badge bg-warning">New</span>
+                                </div>
+                            </div>
+                            <div id="oolongTea" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/oolong-tea.png" class="card-img-top-main"
+                                                        alt="oolong-tea" id="openModal" modal="whiteTea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">Oolong Tea</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="120">P 155.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-5">Oolong tea is a traditional Chinese tea.
+                                                        It’s made from the leaves of the Camellia sinensis plant, the
+                                                        same plant used to
+                                                        make green tea and black tea. The difference is in how the tea
+                                                        is processed.
+                                                        The process of oxidation is what creates green, dark, or oolong
+                                                        teas. Oolong tea
+                                                        contains several vitamins and antioxidants.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/rooibos-tea.png" class="card-img-top-main openModal" role="button"
+                                    alt="rooibos-tea" modal="rooibosTea">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rooibos Tea <p class="text-danger">P 120.00 / bag</p>
+                                    </h5>
+                                    <span class="badge bg-warning">New</span>
+                                </div>
+                            </div>
+                            <div id="rooibosTea" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/rooibos-tea.png" class="card-img-top-main"
+                                                        alt="rooibos-tea" id="openModal" modal="whiteTea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">Rooibos Tea</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="120">P 120.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-5">The main nutritional benefit of rooibos
+                                                        tea lies in its
+                                                        rich antioxidant content and it being a source of some unique
+                                                        polyphenols,
+                                                        including aspalathin. These protective plant compounds may help
+                                                        protect against
+                                                        the free radical damage that leads to conditions like diabetes,
+                                                        heart disease
+                                                        and potentially cancer</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents p-5" id="gift-items">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/gift-set-1.png" class="card-img-top-main openModal" role="button"
+                                    alt="giftset1" modal="giftset1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mint Tea with Butterscotch Brownies <p class="text-danger">P
+                                            450.00 / bag
+                                        </p>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="giftset1" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/gift-set-1.png" class="h-100 w-90" alt="gift-set-tea"
+                                                        id="openModal" modal="whiteTea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">Mint Tea with Butterscotch Brownies Tea</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="450">P 450.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-5">Mint tea is a herbal tea made by infusing
+                                                        mint leaves in
+                                                        hot water. Mint tea made with peppermint leaves is called
+                                                        peppermint tea, and
+                                                        mint tea made with spearmint is called spearmint tea. There also
+                                                        exist teas that
+                                                        infuse peppermint and spearmint leaves. With freshly baked
+                                                        butterscotch in one bag!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/gift-set-2.png" class="card-img-top-main openModal" role="button"
+                                    alt="giftset2" modal="giftset2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Flowering tea bag (12oz) <p class="text-danger">P 500.00
+                                        </p>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="giftset2" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/gift-set-2.png" class="h-100 w-90" alt="gift-set-tea"
+                                                        id="openModal" modal="whiteTea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">Flowering tea bag (12oz)</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="500">P 500.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-5">Flowering tea or blooming tea consists of
+                                                        a bundle of
+                                                        dried tea leaves wrapped around one or more dried flowers. These
+                                                        are made by
+                                                        binding tea leaves and flowers together into a bulb, then
+                                                        setting them to dry.
+                                                        Many blends of blooming tea are combined with green tea leaves,
+                                                        as the light and
+                                                        slightly sweet taste of this tea pairs well with floral and
+                                                        herbal additions.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/gift-set-3.png" class="card-img-top-main openModal" role="button"
+                                    alt="giftset3" modal="giftset3">
+                                <div class="card-body">
+                                    <h5 class="card-title">White Tea (12oz)<p class="text-danger">P 350.00</p>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="giftset3" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between flex-row-reverse">
+                                        <span class="close">&times;</span>
+                                        <div class="p-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/gift-set-3.png" class="card-img-top"
+                                                        alt="gift-set-tea">
+                                                </div>
+                                                <div class="col-6 p-2">
+                                                    <h5 class="mb-4">White Tea (12oz)</h5>
+                                                    <div class="form-check form-switch">
+                                                        <div>
+                                                            <input class="form-check-input typeOfPurchase"
+                                                                type="checkbox" role="switch">
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked">Retail</label>
+                                                            <p price="500">P 350.00 / bag</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text pt-5">White tea is a true tea and the least
+                                                        processed, making it
+                                                        a delicate tea that packs a punch when it comes to health
+                                                        benefits.
+                                                        White tea
+                                                        benefits include preventing tooth decay, promoting healthy skin
+                                                        and
+                                                        hair and
+                                                        increased energy and alertness. Drinking a cup a day can help
+                                                        prevent things
+                                                        like the common cold and eliminate free radicals that can cause
+                                                        an
+                                                        array of
+                                                        ailments from acne to cancer.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="min-h py-5 brown-bg" id="branches">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center py-5">BRANCHES</h1>
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Branch Name</th>
+                            <th>Location</th>
+                            <th>Store Hours</th>
+                            <th>Mobile Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ADB Ave.</td>
+                            <td>G/F AIC Burgundy Empire Tower, ADB Avenue corner Sapphire St, Brgy San Antonio, PASIG
+                            </td>
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Emerald</td>
+                            <td>G/F Wynsum Corp Plaza, 22 Emerald Avenue, Ortigas Center, PASIG</td>
+                            <td>Monday to Friday
+                                9:00 AM - 4:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Arena</td>
+                            <td>4F AIC Burgundy Empire Tower, ADB Avenue corner Sapphire St, Brgy San Antonio, PASIG
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>OCC</td>
+                            <td>6F AIC Burgundy Empire Tower, ADB Avenue corner Sapphire St, Brgy San Antonio, PASIG
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Ortigas</td>
+                            <td>4F AIC Burgundy Empire Tower, ADB Avenue corner Sapphire St, Brgy San Antonio, PASIG
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Brielle Williamson</td>
+                            <td>4F AIC Burgundy Empire Tower, ADB Avenue corner Sapphire St, Brgy San Antonio, PASIG
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Herrod Chandler</td>
+                            <td>4F AIC Burgundy Empire Tower, ADB Avenue corner Sapphire St, Brgy San Antonio, PASIG
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Rhona Davidson</td>
+                            <td>4F AIC Burgundy Empire Tower, ADB Avenue corner Sapphire St, Brgy San Antonio, PASIG
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Renaissance</td>
+                            <td>2 Shaw Boulevard Brgy Oranbo, PASIG</td>
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Tektite</td>
+                            <td>2 Shaw Boulevard Brgy Oranbo, PASIG</td>
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Plaza</td>
+                            <td>1 Shaw Boulevard Brgy Oranbo, PASIG</td>
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Shaw Blvd</td>
+                            <td>131-133 Shaw Boulevard Brgy Oranbo, PASIG</td>
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Medical City</td>
+                            <td>1F Transcom Bldg., Frontera Verde, E. Rodriguez Jr. Avenue, UGONG, PASIG </td>
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Julia Vargas</td>
+                            <td>2F Transcom Bldg., Frontera Verde, E. Rodriguez Jr. Avenue, UGONG, PASIG </td>
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Frontera Verde</td>
+                            <td>G/F Transcom Bldg., Frontera Verde, E. Rodriguez Jr. Avenue, UGONG, PASIG </td>
+                            <td>Monday to Friday
+                                9:00 AM - 3:00 PM</td>
+                            <td>09123456789</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="light-brown-bg py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img src="img/contact-us.png" class="w-100 h-100" alt="contact-us">
+                </div>
+                <div class="col-sm-12 col-md-6 ps-sm-0 ps-lg-5">
+                    <p class="h2 mb-3">Contact Us Form</p>
+                    <p>We would like to hear from you!</p>
+                    <form action="" class="mt-4">
+                        <div class="mb-3">
+                            <label for="name">Name: <span class="text-danger">*</span></label>
+                            <input type="text" id="name" name="name" autocomplete="on">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email: <span class="text-danger">*</span></label>
+                            <input type="email" id="email" name="email" autocomplete="on">
+                        </div>
+                        <div class="mb-3">
+                            <label for="item">Item:</label>
+                            <input list="items" name="item" id="item">
+
+                            <datalist id="items">
+                                <option value="White Tea">
+                                <option value="Black Tea">
+                                <option value="Hibiscus Tea">
+                                <option value="Green Tea">
+                                <option value="Oolong Tea">
+                            </datalist>
+                        </div>
+                        <div class="mb-3">
+                            <label for="">Gender: <span class="text-danger">*</span></label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genderRadioButton"
+                                    id="genderRadioMale" value="male" checked> <label class="form-check-label"
+                                    for="genderRadioMale">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genderRadioButton"
+                                    id="genderRadioButtonFemale" value="female"> <label class="form-check-label"
+                                    for="genderRadioButtonFemale">Female</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="">Customer Type: <span class="text-danger">*</span></label>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="resellerType" value="reseller"
+                                    name="customerType">
+                                <label class="form-check-label" for="resellerType">Reseller</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="buyerType" value="buyer"
+                                    name="customerType">
+                                <label class="form-check-label" for="buyerType">Buyer</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="birthdate">Birthdate: <span class="text-danger">*</span></label>
+                            <input type="date" id="birthdate" name="birthdate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message">Message: <span class="text-danger">*</span></label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <p class="text-primary" id="terms">View terms and conditions</p>
+                        <div class="toggler">
+                            <div id="toggle" class="ui-widget-content ui-corner-all" style="display: none;">
+                                <p>
+                                    By submitting this form you are agreeing to use your personal details and all
+                                    information above will be kept confidential by the company.
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-success mt-4" id="form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-3">
+        <p class="text-center text-dark">Copyright Ⓒ 2022. Impresso Espresso</p>
+    </section>
+
+    <div class="dialog" id="dialog" title="Announcement">
+        <p>Payday sale! Get 20% off for ever purchase of our best-seller items! What are you waiting for?</p>
+    </div>
+
+    <div class="formValidationError d-none" id="formValidationError" title="Error!">
+        <p class="formValidationErrorMessage"></p>
+    </div>
+
+    <div class="formSuccess d-none" id="dialog" title="Success">
+        <p>Successfully submit your form! Thank you!</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/r/ju-1.11.4/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+    <script src="index.js"></script>
+</body>
